@@ -138,6 +138,8 @@ def loginClick():
     if success == True:
         loginWindow.destroy()
         openMainWindow(language)
+    else:
+        messagebox.showwarning(title="Error", message="wrong username or password")
 
 #Δημιουργία κουμπιού που ξεκινάει την διαδικασία εισόδου στην εφαρμογή
 loginButton = Button(login_label,
